@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario de Registro</title>
+  <script type="text/javascript" src="js/form.js"></script>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <section class="form-register">
+  <h1>Formulario de Registro</h1>
+  <form onsubmit="return validarFormulario()">
+    <label for="tipoDocumento">Tipo de documento:</label>
+    <select  class="controls" id="tipoDocumento" name="tipoDocumento">
+      <option  class="controls" value="">Seleccione...</option>
+      <option  class="controls" value="cc">Cédula de Ciudadanía</option>
+      <option  class="controls" value="ti">Tarjeta de Identidad</option>
+      <option  class="controls" value="ce">Cédula de Extranjería</option>
+    </select>
+    <br>
+
+    <label for="numeroDocumento">No. Documento:</label>
+    <input  class="controls" type="text" id="numeroDocumento" name="numeroDocumento" pattern="\d+" minlength="5">
+    <br>
+
+    <label for="nombre">Nombre:</label>
+    <input  class="controls" type="text" id="nombre" name="nombre" pattern="[a-zA-Z0-9]+">
+    <br>
+
+    <label for="apellido">Apellido:</label>
+    <input  class="controls" type="text" id="apellido" name="apellido" pattern="[a-zA-Z0-9]+">
+    <br>
+
+    <label for="fechaNacimiento">Fecha Nacimiento:</label>
+    <input class="controls" type="date" id="fechaNacimiento" name="fechaNacimiento">
+    <br>
+
+    <label for="correoElectronico">Correo Electrónico:</label>
+    <input  class="controls" type="text" id="correoElectronico" name="correoElectronico" pattern=".+@misena\.edu\.co">
+    <br>
+
+    <label for="password">Password:</label>
+    <input  class="controls" type="password" id="password" name="password" minlength="10" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{10,}">
+    <br>
+
+    <label for="confirmarPassword">Confirmar Password:</label>
+    <input  class="controls" type="password" id="confirmarPassword" name="confirmarPassword" minlength="10" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{10,}">
+    <br>
+
+    <label for="terminosUso">Aceptar Términos de uso:</label>
+    <input class="controls" type="checkbox" id="terminosUso" name="terminosUso">
+    <button class="botons" type="button" onclick="mostrarTerminosUso()">Ver Términos de uso</button>
+    <br>
+
+    <input class="botons" type="submit" value="Registrarse">
+  </form>
+</body>
+</section>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Conversor de Temperatura</title>
+  <script type="text/javascript" src="js/reto2.js"></script>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <section class="form-register">
+  <h1>Conversor de Temperatura</h1>
+  <label for="temperatura">Ingresa la temperatura en grados:</label>
+  <input class="controls" type="number" id="temperatura" name="temperatura">
+  <br>
+  <label for="conversionDe">Convertir de:</label>
+  <select class="controls" id="conversionDe" name="conversionDe">
+    <option class="controls" value="1">Fahrenheit</option>
+    <option class="controls" value="2">Celsius</option>
+    <option class="controls" value="3">Kelvin</option>
+  </select>
+  <br>
+  <label for="conversionA">Convertir a:</label>
+  <select class="controls" id="conversionA" name="conversionA">
+    <option class="controls" value="1">Fahrenheit</option>
+    <option class="controls" value="2">Celsius</option>
+    <option class="controls" value="3">Kelvin</option>
+  </select>
+  <br>
+  <button class="botons"onclick="realizarConversion()">Realizar Conversión</button>
+</section>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Figuras</title>
+  <script type="text/javascript" src="js/reto5.js"></script>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <section class="form-register">
+  <h1>Calculadora de Figuras</h1>
+  <label for="figuraSeleccionada">Selecciona una figura:</label>
+  <select class="controls" id="figuraSeleccionada" name="figuraSeleccionada">
+    <option class="controls" value="1">Círculo</option>
+    <option class="controls" value="2">Triángulo</option>
+    <option class="controls" value="3">Rectángulo</option>
+    <option class="controls" value="4">Cuadrado</option>
+  </select>
+  <br>
+  <div id="inputContainer">
+    <label for="radio">Ingresa el radio del círculo:</label>
+    <input class="controls" type="number" id="radio" name="radio">
+    <br>
+    <label for="baseTriangulo">Ingresa la base del triángulo:</label>
+    <input class="controls" type="number" id="baseTriangulo" name="baseTriangulo">
+    <br>
+    <label for="alturaTriangulo">Ingresa la altura del triángulo:</label>
+    <input class="controls" type="number" id="alturaTriangulo" name="alturaTriangulo">
+    <br>
+    <label for="baseRectangulo">Ingresa la base del rectángulo:</label>
+    <input class="controls" type="number" id="baseRectangulo" name="baseRectangulo">
+    <br>
+    <label for="alturaRectangulo">Ingresa la altura del rectángulo:</label>
+    <input class="controls" type="number" id="alturaRectangulo" name="alturaRectangulo">
+    <br>
+    <label for="ladoCuadrado">Ingresa el lado del cuadrado:</label>
+    <input class="controls" type="number" id="ladoCuadrado" name="ladoCuadrado">
+  </div>
+  <br>
+  <button class="botons" onclick="calcularFigura()">Calcular</button>
+</section>
+</body>
+</html>
